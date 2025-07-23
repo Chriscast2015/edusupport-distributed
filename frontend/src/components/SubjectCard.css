@@ -1,0 +1,35 @@
+.subject-card {
+    /* Tamaño y caja */
+    width: 100%;
+    max-width: 350px;
+    min-height: 220px;
+    box-sizing: border-box;
+    /* Espaciado interno */
+    padding: 1.5rem;
+    /* Fondo y borde */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* Layout interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Texto y enlaces */
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    /* Transición hover */
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0; /* ya controla el gap el grid */
+}
+
+    .subject-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .subject-card .icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+    }

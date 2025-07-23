@@ -1,0 +1,83 @@
+.accessibility-modal {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    width: 300px;
+    background: rgba(15, 12, 41, 0.9); /* mismo tono del dashboard oscuro */
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    z-index: 1002;
+    padding: 1.5rem;
+    font-family: 'Jost', sans-serif;
+    color: #f2e8c4; /* texto claro */
+    transition: all 0.3s ease;
+}
+
+.accessibility-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+    .accessibility-header h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #f2e8c4; /* mismo color de dashboard */
+        margin: 0;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+.accessibility-subtitle {
+    margin: 0.8rem 0 0.4rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #f2e8c4;
+    opacity: 0.9;
+}
+
+.accessibility-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.size-btn {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.08); /* suave como en .subject-card */
+    color: #f2e8c4;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+    .size-btn:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        transform: scale(1.02);
+        box-shadow: 0 0 10px rgba(62, 201, 167, 0.5);
+    }
+
+    .size-btn.selected {
+        background-color: #3ec9a7;
+        color: #0f0c29;
+        font-weight: 600;
+    }
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s ease;
+}
+
+    .close-btn:hover {
+        color: #fff;
+    }
